@@ -10,48 +10,95 @@
         crossorigin="anonymous">
 </head>
 <body class="bg-body-secondary">
-    <nav class="navbar bg-white">
-        <div class="container-fluid shadow p-1 mb-5 bs-body-bg">
-            <ul class="float-end list-inline">
-                <li class="nav-item list-inline-item">
-                  <a class="nav-link" href="#">HOME</a>
-                </li>
-                <li class="nav-item list-inline-item">
-                  <a class="nav-link" href="#">PRODUCT</a>
-                </li>
-                <li class="nav-item list-inline-item">
-                  <a class="nav-link" href="#">GALLERY</a>
-                </li>
-                <li class="nav-item list-inline-item">
-                  <a class="nav-link" href="#">BLOG</a>
-                </li>
-                <li class="nav-item list-inline-item">
-                  <a class="nav-link" href="#">INVENTORY</a>
-                </li>
-              </ul>
+    <nav class="navbar bg-body-tertiary shadow p-3 mb-5 bg-body-tertiary rounded">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="https://www.telkomsel.com">
+          </a>
+
+          <div class="navbar-nav d-inline" >
+            <ul class="navbar-nav d-inline-block align-text-right me-auto mb-2 mb-lg-0">
+              
+              <li class="nav-item d-inline me-2">
+                <a class="nav-link d-inline" href="#">HOME</a>
+              </li>
+              <li class="nav-item d-inline me-2">
+                <a class="nav-link d-inline" href="#">PRODUCT</a>
+              </li>
+              <li class="nav-item d-inline me-2">
+                <a class="nav-link d-inline" href="#">GALLERY</a>
+              </li>
+              <li class="nav-item d-inline me-2">
+                <a class="nav-link d-inline" href="#">BLOG</a>
+              </li>
+              <li class="nav-item d-inline me-2">
+                <a class="nav-link d-inline" href="#">INVENTORY</a>
+              </li>
+              
+            </ul>
+            
+          </div>
         </div>
-      </nav>
-    
-    <div class="container-fluid p-20">
+    </nav>
+  
+    <div class="row container-fluid">
+        <!-- div profile -->
+        <div class="col-sm-10 align-self-center container-fluid bg-white p-3">
+        <div class="row">
+            <!-- div image pp -->
+            <div class="col-sm-2">
+                <img src="./images/pp_mfm.jpg" alt="pp" class="mw-50 mh-100 rounded-circle object-fit-cover align-middle" 
+                style="width: 150px; height: 150px;" 
+                >
+            </div>
 
-    </div>
+            <!-- div Name and Button -->
+            <div class="col-sm-4">
+                <h2 class="mt-4">
+                    Muhammad Faqihuddin M
+                </h2>
+                <p>Front End Developer</p>
+                <button type="button" class="btn btn-primary btn-lg">
+                    Kontak
+                </button>
+                <button type="button" class="btn btn-outline-success btn-lg m-3">Resume</button>
+            </div>
 
-    <div class="container-fluid bg-white p-4">
-      <form action="">
-        <label class=label_input for="input_nama">Nama</label><br>
-        <input type="text" name="nama" id="input_nama" style="width: 100%;"><br>
-        <label class=label_input for="input_role">Role</label><br>
-        <input type="text" name="role" id="input_role" style="width: 100%;"><br>
-        <label class=label_input for="input_availability">Availability</label><br>
-        <input type="text" name="availability" id="input_availability" style="width: 100%;"><br>
-        <label class=label_input for="input_Age">Age</label><br>
-        <input type="text" name="Age" id="input_Age" style="width: 100%;"><br>
-        <label class=label_input for="input_Lokasi">Lokasi</label><br>
-        <input type="text" name="Lokasi" id="input_Lokasi" style="width: 100%;"><br>
-        <label class=label_input for="input_yExperience">Years Experience</label><br>
-        <input type="text" name="yExperience" id="input_yExperience" style="width: 100%;"><br>
-
-      </form>
+            <div class="col-sm-1 fw-bold border-start">
+                <p>Availability</p>
+                <p>Usia</p>
+                <p>Lokasi</p>
+                <p>Pengalaman</p>
+                <p>Email</p>
+            </div>
+            <div class="col-sm-3">
+                <p>Full Time</p>
+                <p>28</p>
+                <p>Jakarta, Indonesia</p>
+                <p>4</p>
+                <p>faqih.xxxx@gmail.com</p>
+            </div>
+        </div>
+        </div>
+        
+        <!-- div form -->
+        <div class="container-fluid col-sm-10 align-self-center bg-white p-4 d-grid gap-2 mt-3">
+          <form action="" class="m-1">
+            <label class="m-1 fw-bold" for="input_nama">Nama</label><br>
+            <input type="text" name="nama" id="input_nama" style="width: 100%;"><br>
+            <label class="m-1 fw-bold" for="input_role">Role</label><br>
+            <input type="text" name="role" id="input_role" style="width: 100%;"><br>
+            <label class="m-1 fw-bold" for="input_availability">Availability</label><br>
+            <input type="text" name="availability" id="input_availability" style="width: 100%;"><br>
+            <label class="m-1 fw-bold" for="input_Age">Age</label><br>
+            <input type="text" name="Age" id="input_Age" style="width: 100%;"><br>
+            <label class="m-1 fw-bold" for="input_Lokasi">Lokasi</label><br>
+            <input type="text" name="Lokasi" id="input_Lokasi" style="width: 100%;"><br>
+            <label class="m-1 fw-bold" for="input_yExperience">Years Experience</label><br>
+            <input type="text" name="yExperience" id="input_yExperience" style="width: 100%;"><br>
+            <br>
+          </form>
+          <button class="btn btn-success btn-block border border-primary p-2" style="--bs-border-opacity: .5;" type="button">Submit</button>
+        </div>
     </div>
 
     <!-- bootstrap script -->
